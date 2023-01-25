@@ -101,10 +101,10 @@ public class Selenium {
 
     @Test
     public void Test09_DoubleClick(){
-//        WebElement webElement = driver.findElement(By.xpath("/html/body/p[2]"));
-//        Actions myAction = new Actions(driver);
-//        myAction.doubleClick(webElement);
-//        myAction.perform();
+        WebElement webElement = driver.findElement(By.xpath("/html/body/p[2]"));
+        Actions myAction = new Actions(driver);
+        myAction.doubleClick(webElement);
+        myAction.perform();
     }
 
 
@@ -177,7 +177,7 @@ public class Selenium {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.print();");
     }
-    
+
     @AfterClass
     public void close(){
 //        driver.close();
